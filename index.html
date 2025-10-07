@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website </title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+         header{
+            text-align:center;
+        }
+
+        .header h3{
+            
+            color:grey;
+            
+
+        }
+       .container{
+        border-top: 3px solid black;
+        width:1200px;
+        margin:20px auto;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, (3, 1fr));
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+              "item-1 item-1 item-2"
+              "item-3 item-3 item-4" 
+              "item-5 item-6 item-7"
+              "item-8 item-8 item-9"
+              ;
+        gap:30px;
+        padding:10px;
+
+       }
+
+       .item-1{
+        grid-area:item-1;
+        height:400px;
+       }
+
+      
+  
+       .item-2{
+        grid-area:item-2;
+       
+         height:400px;
+         padding:20px;
+         background-color:aliceblue;
+         margin-bottom:20px;
+
+         
+       }
+
+       .item-2 h5{
+        margin: 5px;
+        font-size: 24px;
+        
+       }
+
+       .item-2 h6{
+        margin: 5px;
+        font-size: 20px;
+       }
+
+       .item-2 h2, p{
+        font-size:18px;
+        text-align: center;
+         margin-bottom:20px;
+       }
+
+     .item-3{
+        
+        grid-area:item-3;
+     }
+
+     
+
+     .item-3 h3{
+        font-size: 40px;
+     }
+
+     .item-3 p{
+        text-align: left;
+     }
+
+     
+       .item-4{
+        color:white;
+        background-color: black;
+         grid-area:item-4;
+       }
+     
+        .item-5{
+         grid-area:item-5;
+       }
+
+       .item-5 p{
+        text-align: left;
+       }
+
+     .item-6{
+         grid-area:item-6;
+       }
+
+       .item-6 p{
+        text-align: left;
+       }
+
+       .item-7{
+        grid-area:item-7;
+
+       }
+
+       .item-7 p{
+        text-align: left;
+       }
+       
+       .item-8{
+        grid-area:item-8;
+       }
+
+       .item-8 p{
+        text-align: left;
+       }
+
+       .item-9{
+        background-color: rgb(246, 208, 214);
+       }
+
+       
+        
+    </style>
+</head>
+<body>
+      <header>
+                <div class="header">
+                <section><h1>The Grid Times</h1> </section>
+                <section><h3>Volume 1 • Issue 42 • September 2025</h3></section>
+            
+            </header>
+    
+   <div class="container">
+
+        <div class="item-1">
+         <img src="./img-1.jpg" alt="landscape" />
+        </div>
+
+        <div class="item-2">
+            <h5> In This Issue</h5>
+            <hr />
+            
+            
+                <h6>Grid Systems Explained</h6>
+                <hr />
+                
+                <h6>Typography Trends 2025</h6>
+
+                <hr />
+
+                <h6>Color Theory Basics</h6>
+
+                <hr />
+
+                <h6>Layout Best Practices</h6>
+                <hr />
+           
+        </div>
+
+  <div class="item-3">
+    <h3> The Art of Modern Design: Embracing Simplicity</h3>
+   <p> In an era of complexity, designers are returning to fundementals. Grid systems provide structure while allowing creativity to flourish. This renaissance of minimalism proves that less is indeed more when it comes to effective visual communication</p> 
+  </div>
+
+    <div class="item-4">
+    <h3> Editor's Note</h3>
+    <p> Welcome to another exciting issue exploring the intersection of design and technology. This month we focus on the power of CSS Grid.</p>
+  </div>
+       
+
+        <div class="item-5">
+            <img src="./img-2.jpg" alt="lightbulb" />
+            <h3> Typography Matters</h3>
+            <p> Good typography is invisible. Great typography is unforgettable. Learn how to choose fonts than enhance your message.</p>
+        </div>
+
+        <div class="item-6">
+            <img src="./img-3.jpg" alt="Goggles" />
+            <h3> Color Psychology</h3>
+            <p>colors evoke emotions and drive decisions. Discover how to use color theory to create compelling designs</p>
+        </div>
+
+        <div class="item-7">
+            <img src="./img-4.png" alt="computer" />
+            <h3> Workspace Setup</h3>
+            <p> A well-organized workspace boosts creativity. Here are tips to optimize your creative environment </p>
+        </div>
+        <div class="item-8">
+            <img src="./img-5.jpg" alt="idk" />
+            <h3> The Future of Web Design</h3>
+            <p>
+                As we move foward, web design continues to evolve. CSS Grid revolutionized how we approach layouts, making repsonive deisgn more intuitve than ever. The future promised even more exiciting developments as browsers continue to support advanced features.
+            </p>
+        </div>
+
+        <div class="item-9">
+            
+             <h3> "Design is not just what it looks like and feels like. Design is how it works."</h3>
+             <p> -Steve Jobs</p>
+           
+        </div>  
+
+    </div>
+</body>
+</html>
